@@ -1,0 +1,84 @@
+version: 2
+
+models:
+  - name: tbl_paid_ads__basic_performance
+    description: >
+      This model consolidates data from various advertising platforms including Bing, Facebook, TikTok, and Twitter 
+      into a unified table. It includes key metrics such as clicks, impressions, spend, conversions, and more 
+      to provide a holistic view of ad performance across different channels.
+
+    columns:
+      - name: date
+        description: "The date of the ad data. Used for partitioning the table."
+
+      - name: add_to_cart
+        description: "Number of 'add to cart' actions attributed to the ad."
+
+      - name: ad_id
+        description: "Unique identifier for the ad."
+
+      - name: adset_id
+        description: "Unique identifier for the ad set."
+
+      - name: campaign_id
+        description: "Unique identifier for the campaign."
+
+      - name: channel
+        description: "The advertising platform (e.g., Bing, Facebook, TikTok, Twitter)."
+
+      - name: creative_id
+        description: "Unique identifier for the creative asset used in the ad."
+
+      - name: placement_id
+        description: "Unique identifier for the placement of the ad."
+
+      - name: clicks
+        description: "Number of clicks on the ad."
+
+      - name: comments
+        description: "Number of comments on the ad."
+
+      - name: engagements
+        description: "Total number of engagements (e.g., clicks, likes, shares) with the ad."
+
+      - name: impressions
+        description: "Number of times the ad was viewed."
+
+      - name: installs
+        description: "Number of app installs attributed to the ad."
+
+      - name: likes
+        description: "Number of likes on the ad."
+
+      - name: link_clicks
+        description: "Number of clicks on the links in the ad."
+
+      - name: post_click_conversions
+        description: "Number of conversions that occurred after a click on the ad."
+
+      - name: post_view_conversions
+        description: "Number of conversions that occurred after viewing the ad."
+
+      - name: posts
+        description: "Number of posts made in the context of the ad."
+
+      - name: purchase
+        description: "Number of purchases attributed to the ad."
+
+      - name: registrations
+        description: "Number of registrations attributed to the ad."
+
+      - name: revenue
+        description: "Total revenue generated from the ad."
+
+      - name: shares
+        description: "Number of times the ad was shared."
+
+      - name: spend
+        description: "Total amount spent on the ad."
+
+      - name: total_conversions
+        description: "Total number of conversions attributed to the ad."
+
+      - name: video_views
+        description: "Total number of video views attributed to the ad."
