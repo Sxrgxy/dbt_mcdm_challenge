@@ -5,7 +5,7 @@
    - The source table should include all relevant metrics and identifiers, such as `date`, `ad_id`, `campaign_id`, `clicks`, `impressions`, `spend`, and other metrics.
 
 2. **Update the dbt Model**:
-   - Modify the existing dbt model (`tbl_paid_ads__basic_performance.sql`) to include a new `UNION ALL` block for the new platform.
+   - Modify the existing dbt model (`vw_paid_ads__basic_performance.sql`) to include a new `UNION ALL` block for the new platform.
    - Use the following template to structure the new `SELECT` statement:
      ```sql
      SELECT 
